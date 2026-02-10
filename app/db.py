@@ -7,7 +7,7 @@ from sqlalchemy.orm import DeclarativeBase, relationship
 from datetime import datetime
 
 DATABASE_URL = "sqlite+aiosqlite:///./test.db"
-class Base(DeclarativeBase):
+class Base(DeclarativeBase):#IMP
     pass
 class Post(Base):
     __tablename__ = "posts"
